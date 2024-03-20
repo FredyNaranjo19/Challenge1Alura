@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <a href="#" rel="">
+            <img src="./imagenes/logo.svg" alt="Logo Alura" class="logo">
+        </a>    
+    </header>
+
+    <main>
+        <section class="primera">
+            <textarea class="encriptar" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="alert">
+                <p>¡Solo letras minúsculas y sin acentos!</p>
+            </div>
+            <div class="containerbtns">
+                <button type="submit" class="encriptarbtn">Encriptar</button>
+                <button type="submit" class="desencriptarbtn">Desencriptar</button>
+            </div>
+        </section>
+        <section class="segunda">
+           <div class="tarjeta">
+                <img src="./imagenes/muñeco.svg" alt="Imagen Muñeco" class="monito">
+                <p class="t1">Ningún mensaje fue encontrado</p>
+                <p class="t2">Ingrese el texto que deseas encriptar o desencriptar</p>
+           </div>
+           <textarea type="mensaje" class="check" readonly></textarea>
+           <button type="submit" class="copybtn">Copiar</button>
+         </section>  
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
