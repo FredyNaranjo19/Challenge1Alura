@@ -1,4 +1,3 @@
-//-------Selección de Elementos-------//
 const btnencriptar = document.querySelector(".encriptarbtn");
 const txtencriptar = document.querySelector(".encriptar");
 const alerta = document.querySelector(".alert");
@@ -55,6 +54,7 @@ btnencriptar.addEventListener("click", e=>{
         respuesta.innerHTML = texto;
         btncopiar.style.visibility = "inherit";
         tarjeta.remove(); 
+        limpiarcaja();
     }
 });
 
@@ -107,6 +107,8 @@ btndesencriptar.addEventListener("click", e=>{
         btncopiar.style.visibility = "inherit";
         tarjeta.remove(); 
     }
+
+    limpiarcaja();
 });
 
 btncopiar.addEventListener("click", e=>{
@@ -115,3 +117,7 @@ btncopiar.addEventListener("click", e=>{
     copiar.select();
     document.execCommand("copy"); 
 });
+
+function limpiarcaja(){
+    let valorcaja = document.querySelector('.encriptar').value = '';
+}
